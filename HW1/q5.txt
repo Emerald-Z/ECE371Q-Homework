@@ -1,0 +1,18 @@
+a)
+a perceptron is a single layer neural network. It is a binary/linear classifier that takes inputs, attributes weights to them
+and passes the sum(a linear combination of the inputs) through an activation function to produce an output. This activation function
+is nonlinear. For optimizing these weights to get the perceptron to produce the proper output, you want to minimize the loss function
+using gradient descent. 
+The perceptron can be applied to the task because it acts as a classifier. You feed the image as an input matrix, and using the 
+activation function and weights, tune the weights so that it classifies based on recognition of a single object.
+
+b)
+the key components and parameters you would need to define when implementing a perceptron for this image classification task are:
+    - input size: what part of the image is being fed in (vectors, individual pixels, blocks, the whole image)
+    - bias value b
+    - activation function: normally some nonlinear one like signum
+    - loss function
+    - learning rotate
+    - number of epochs: iteration count
+    - order: standard vs stochastic gradient descent
+    - MSE: minmum standard error, if epoch number not set then use this
