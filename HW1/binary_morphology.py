@@ -9,8 +9,8 @@ fingerprint = cv2.imread("fingerprint.jpg",cv2.IMREAD_GRAYSCALE)
 
 # a
 def threshold(image, threshold):
-    _, thresh = cv2.threshold(image, threshold, 255, cv2.THRESH_BINARY)
-    thresh = np.zeros(image.shape[0], image.shape[1])
+    _, thresh = cv2.threshold(image, threshold, 1, cv2.THRESH_BINARY)
+    # thresh = np.zeros(image.shape[0], image.shape[1])
     # for i in range(image.shape[0]): # not using opencv
     #     for j in range(image.shape[1]):
     #         if image[i,j] >= threshold:
