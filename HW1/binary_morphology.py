@@ -14,9 +14,9 @@ def threshold(image, threshold):
     # for i in range(image.shape[0]): # not using opencv
     #     for j in range(image.shape[1]):
     #         if image[i,j] >= threshold:
-    #             thresh[i,j] = 255
-    #         else: 
     #             thresh[i,j] = 0
+    #         else: 
+    #             thresh[i,j] = 1
     return thresh
 
 
