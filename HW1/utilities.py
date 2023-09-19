@@ -13,7 +13,10 @@ def display(rows, cols, images, labels, gray_scale=False, large_size=False):
         plt.gray()
     for i in range(rows):
         for j in range(cols):
-            idx = ((i * rows) + j)
+            if (cols <= rows): 
+                idx = ((i * rows) + j)
+            else:
+                idx = ((i * cols) + j)
             figure.add_subplot(rows, cols, idx + 1)
             plt.imshow(images[idx]) # opencv represents in BGR vs RGB expected
             # plt.axis('off')
